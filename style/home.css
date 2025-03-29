@@ -1,0 +1,107 @@
+.mainContext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin-top: 2.5em;
+    gap: 2em;
+}
+.mainContext h3 {
+    font-size: 2em;
+    font-family: "Roboto-ExtraBold", sans-serif;
+    color: #1f2937;
+}
+.boxs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.boxs figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 7em;
+}
+.boxs figure img {
+    border: 0.15em solid #3882f6;
+    border-radius: 0.5em;
+    height: 7em;
+}
+.boxs figure figcaption {
+    font-size: 0.7em;
+    font-family: "Roboto-Light", sans-serif;
+}
+
+.quote {
+    width: 100vw;
+    background-color: #e5e7eb;
+    margin-top: 5em;
+    padding: 8% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote__container {
+    --container-width: 650px;
+    --container-padding: 30px;
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
+
+.quoteContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.4em;
+}
+.quote p {
+    font-size: 2em;
+    font-family: "Roboto-LightItalic";
+    color: #1f2937;
+}
+.quote strong {
+    font-size: 1.3em;
+    font-family: "Roboto-Bold";
+    color: #1f2937;
+    text-align: end;
+}
+.action {
+    margin: 10% 0;
+    background-color: #3882f6;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 4% 9%;
+}
+.actionDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.action h2 {
+    font-size: 1.5em;
+    font-family: "Roboto-ExtraBold", sans-serif;
+    color: #f9faf8;
+}
+.action P {
+    font-size: 1em;
+    font-family: "Roboto-Light", sans-serif;
+    color: #e5e7eb;
+}
+
+@media (max-width: 640px) {
+    main {
+        font-size: 0.7em;
+    }
+}

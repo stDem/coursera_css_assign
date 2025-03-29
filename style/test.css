@@ -1,0 +1,112 @@
+.test__main {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tableContainer table {
+    width: 90%;
+    height: 60%;
+    width: 100%;
+    height: 50%;
+    margin: 2% 0;
+    align-items: center;
+    height: 40%;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.tableContainer table th {
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+}
+.tableContainer table td {
+    height: 50px;
+    border-bottom: 1px solid #5f656d;
+}
+.Radio {
+    text-align: center;
+}
+.Radio input {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+.submit {
+    height: 40%;
+    text-align: right;
+    position: relative;
+    right: 10%;
+}
+.submit label {
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 3px solid #3882f6;
+    border-radius: 5px;
+}
+.submit label input {
+    padding: 10px;
+}
+
+/* img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+.firstResult {
+    width: 100%;
+    margin-bottom: 10%;
+}
+.SignCard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardHead {
+    width: 60%;
+}
+.cardHead figure {
+    width: 90%;
+}
+.cardHead h3 {
+    color: rgb(28, 105, 206);
+    font-family: "Roboto-ExtraBold";
+    font-size: 1.8em;
+}
+.cardHead img {
+    width: 50%;
+}
+.cardMains {
+    width: 50%;
+}
+.cardMains h5 {
+    color: rgb(28, 105, 206);
+    font-family: "Roboto-ExtraBold";
+    font-size: 1em;
+}
+.cardDetail h5 {
+    color: rgb(28, 105, 206);
+    font-family: "Roboto-ExtraBold";
+    font-size: 1em;
+}
+
+@media (max-width: 640px) {
+    .test__main {
+        font-size: 0.7em;
+    }
+}

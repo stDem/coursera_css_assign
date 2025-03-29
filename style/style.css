@@ -1,0 +1,193 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    /* min-width: 340px; */
+    min-height: 100vh;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #1f2937;
+    background-color: #f0f0f0;
+}
+
+svg {
+    max-height: 100%;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 200ms;
+}
+
+.link a:hover {
+    color: rgb(167, 195, 246);
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 0.8em;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 0.5em;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    border: 0.2em solid transparent;
+}
+
+.reverse-btn {
+    border: 0.2em solid #f9faf8;
+}
+.reverse-btn:hover {
+    background-color: #f9faf8;
+    color: #3882f6;
+}
+
+.norm_btn:hover, .btn:hover {
+    border: 0.2em solid #f9faf8;
+    color: #1f2937;
+}
+
+.text-red {
+    color: rgb(153, 20, 20);
+}
+
+.text-blue {
+    color: rgb(15, 15, 102);
+    font-family: "Roboto-Bold", sans-serif;
+}
+
+.text-highlight {
+    background-color: rgb(236, 230, 223);
+}
+
+.container {
+    --container-width: 1180px;
+    --container-padding: 30px;
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}
+
+.dark_background {
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.primary_text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.secondary_text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.primary_button {
+    color: #e5e7eb;
+    background-color: #3882f6;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none; /* Убираем подчёркивание */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    opacity: 0.5;
+}
+.back-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        --container-width: 880px;
+    }
+}
+@media (max-width: 940px) {
+    .container {
+        --container-width: 680px;
+    }
+}
+@media (max-width: 640px) {
+    .container {
+        --container-padding: 15px;
+    }
+}
+
+.rotate {
+    animation: rotateAnimation 30s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

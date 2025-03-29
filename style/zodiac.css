@@ -1,0 +1,69 @@
+.articles__article{
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0;
+  gap: 1em;
+  line-height: 1.7
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.articles h2{
+  text-align: center;
+}
+
+.zodiac__cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 3em 0;
+}
+
+.cards__link{
+  max-width: 10em;
+  border-radius: 1em;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+}
+
+.cards__link:hover{
+background-color: rgb(220, 243, 243);
+}
+
+.cards__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  width: 100%;
+  height: 100%;
+  padding: 0.2em;
+}
+
+.cards__card figcaption:last-child{
+  font-size: 0.6em;
+}
+
+.articles__description{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.articles__img{
+  width: 20%;
+  height: 20%;
+}
+
+.articles__text{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
